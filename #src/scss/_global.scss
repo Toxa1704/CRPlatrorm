@@ -1,0 +1,32 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html, body {
+    height: 100%;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $text;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    max-width: 1440px;
+    font-family: Jost;
+}
+.container {
+    max-width: 1230px ;
+    margin: 0 auto;
+    padding: 0 15px;
+}
