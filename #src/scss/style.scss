@@ -419,11 +419,11 @@ body {
     }
 
     &-filter {
-        max-width: 566px;
+        max-width: 560px;
         max-height: 45px;
         margin-top: 16px;
 
-        .inner-filter-list {
+        .inner-filter-btn {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -431,19 +431,20 @@ body {
             color: #FFF;
             font-size: 16px;
             font-weight: 800;
-            transition: all 0.5s;
 
-            a {
+            button  {
                 padding: 8px 16px;
                 border-radius: 16px;
                 border-radius: 16px;
                 border: 1px solid var(--Gradient-2, #0D0A2C);
                 background: var(--Neutural-90, #000814);
                 box-shadow: 0px 0px 14px 0px rgba(44, 128, 255, 0.19) inset;
+                transition: background 1s;
             }
 
-            a:hover {
+            button:hover {
                 background: var(--Gradient-3, linear-gradient(94deg, #2F7CFC 0.26%, #A241FE 22.22%, #FF16F5 53.19%, #FF4887 80.22%, #FF6E35 105.55%));
+                
             }
         }
 
