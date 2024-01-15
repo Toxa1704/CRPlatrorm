@@ -197,14 +197,17 @@ body {
     display: flex;
     justify-content: space-between;
     padding-bottom: 0;
+
     p {
         min-width: 52px;
     }
+
     img {
         margin-left: 280px;
         cursor: pointer;
     }
 }
+
 .byucalc-input-inner {
     width: 100%;
     padding: 8px 0;
@@ -262,9 +265,11 @@ body {
         background: none;
         border: none;
         border-left: 2px solid rgba(44, 128, 255, 0.19);
+        outline: none;
     }
 
 }
+
 .you-get-input {
     margin: 0;
 }
@@ -377,3 +382,117 @@ body {
 }
 
 // end buycr
+
+// start markets
+.markets__inner {
+    &-title {
+        max-height: 60px;
+        margin-top: 86px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 59.5px;
+
+        .inner-title-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            color: #48CAE4;
+            font-size: 16px;
+            font-weight: 400;
+
+            img {
+                cursor: pointer;
+            }
+
+            a {
+                color: #48CAE4;
+            }
+        }
+    }
+
+    &-filter {
+        max-width: 566px;
+        max-height: 45px;
+        margin-top: 16px;
+
+        .inner-filter-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: 800;
+            transition: all 0.5s;
+
+            a {
+                padding: 8px 16px;
+                border-radius: 16px;
+                border-radius: 16px;
+                border: 1px solid var(--Gradient-2, #0D0A2C);
+                background: var(--Neutural-90, #000814);
+                box-shadow: 0px 0px 14px 0px rgba(44, 128, 255, 0.19) inset;
+            }
+
+            a:hover {
+                background: var(--Gradient-3, linear-gradient(94deg, #2F7CFC 0.26%, #A241FE 22.22%, #FF16F5 53.19%, #FF4887 80.22%, #FF6E35 105.55%));
+            }
+        }
+
+    }
+
+    &-cards {
+        margin-top: 36px;
+        width: 130px;
+        height: 166px;
+        display: flex;
+        padding: 24px 36px;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        border: 1px solid #0D0A2C;
+        background: rgba(255, 255, 255, 0.01);
+        box-shadow: 0px 0px 14px 0px rgba(44, 128, 255, 0.19) inset;
+
+        .cards-text {
+            color: #FFF;
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .cards-prices {
+            margin-top: 24px;
+            color: var(--Accent-20, #FFD60A);
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        .cards-price-increase {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--Accent-80, #48CAE4);
+            font-size: 12px;
+            font-weight: 400;
+            img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+// end markets
