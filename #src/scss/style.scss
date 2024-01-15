@@ -385,6 +385,8 @@ body {
 
 // start markets
 .markets__inner {
+    background: linear-gradient(180deg, rgba(1, 8, 21, 0.65) 0%, #010815 100%);
+    max-width: 992px;
     &-title {
         max-height: 60px;
         margin-top: 86px;
@@ -445,6 +447,13 @@ body {
             }
         }
 
+    }
+    .markets-cards {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
     }
 
     &-cards {
