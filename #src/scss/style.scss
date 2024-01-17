@@ -17,7 +17,9 @@
 
 body {
     background-image: url(../img/bg_body.png);
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
 }
 
 //start header
@@ -354,6 +356,7 @@ body {
             .info-content-text__img {
                 display: flex;
                 justify-content: space-between;
+                align-items: flex-start;
                 position: relative;
 
                 .info-content-text {
@@ -387,6 +390,7 @@ body {
 .markets__inner {
     background: linear-gradient(180deg, rgba(1, 8, 21, 0.65) 0%, #010815 100%);
     max-width: 992px;
+
     &-title {
         max-height: 60px;
         margin-top: 86px;
@@ -432,7 +436,7 @@ body {
             font-size: 16px;
             font-weight: 800;
 
-            button  {
+            button {
                 padding: 8px 16px;
                 border-radius: 16px;
                 border-radius: 16px;
@@ -442,13 +446,14 @@ body {
                 transition: background 1s;
             }
 
-            button:hover {
+            button:focus {
                 background: var(--Gradient-3, linear-gradient(94deg, #2F7CFC 0.26%, #A241FE 22.22%, #FF16F5 53.19%, #FF4887 80.22%, #FF6E35 105.55%));
-                
+
             }
         }
 
     }
+
     .markets-cards {
         display: flex;
         justify-content: flex-start;
@@ -492,6 +497,7 @@ body {
             color: var(--Accent-80, #48CAE4);
             font-size: 12px;
             font-weight: 400;
+
             img {
                 display: flex;
                 justify-content: center;
@@ -506,3 +512,218 @@ body {
 }
 
 // end markets
+
+// star safebuy
+.safebuy__wrapper {
+    margin-top: 142px;
+}
+
+.safebuy__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 120px;
+
+    .safebuy__content-text {
+        // margin-top: -150px;
+        max-width: 645px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .content__text-title {
+            text-align: justify;
+            font-size: 48px;
+            font-weight: 900;
+            line-height: 59.5px;
+
+            span {
+                background: var(--Gradient-3, linear-gradient(94deg, #2F7CFC 0.26%, #A241FE 22.22%, #FF16F5 53.19%, #FF4887 80.22%, #FF6E35 105.55%));
+                background-clip: text;
+                color: transparent;
+            }
+        }
+
+        .content__text-text {
+            margin-top: 24px;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .content__text-table {
+            margin-top: 48px;
+            font-size: 20px;
+            font-weight: 800;
+
+            .text-table-item {
+                display: flex;
+                padding-bottom: 24px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                gap: 24px;
+
+                .table-item-img {
+                    display: flex;
+                    padding: 10px;
+                    align-items: flex-start;
+                    gap: 10px;
+                    border-radius: 38px;
+                    border: 1px solid $gradient2, #0D0A2C;
+                    background: rgba(255, 255, 255, 0.01);
+
+                    box-shadow: 0px 0px 14px 0px rgba(44, 128, 255, 0.19) inset;
+                    cursor: pointer;
+                }
+
+                .table-item-text {
+                    margin-bottom: 24px;
+
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .safebuy__content-image {
+        margin-right: 29px;
+        background-image: url('../img/safebuy_img_bg.png');
+        background-size: 100% 80%;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        .content-image-inner {
+            height: 281px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+
+            .content-image-block-2 {
+                margin-top: 100px;
+                align-self: center;
+                width: 273px;
+                height: 71px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 16px;
+                border: 1px solid var(--Gradient-2, #0D0A2C);
+                background: linear-gradient(94deg, rgba(47, 124, 252, 0.01) 0.26%, rgba(162, 65, 254, 0.01) 22.22%, rgba(255, 22, 245, 0.01) 53.19%, rgba(255, 72, 135, 0.01) 80.22%, rgba(255, 110, 53, 0.01) 105.55%);
+                box-shadow: 0px 0px 10.5px 0px rgba(44, 128, 255, 0.19) inset;
+
+                .block-2-img {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+
+                    img:nth-child(1) {
+                        padding-right: 13px;
+                        padding-bottom: 17px;
+                    }
+
+                    img:last-child {
+                        padding-right: 25px;
+                    }
+                }
+
+                .block-2-text {
+                    width: 273px;
+                    height: 71px;
+                    padding: 10px 0 4px 18px;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    p:nth-child(1) {
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+
+                    p:last-child {
+                        font-size: 32px;
+                        font-weight: 700;
+                        line-height: 43.5px;
+                    }
+                }
+            }
+
+            .content-image-block-1 {
+                align-self: flex-start;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 17px;
+                flex-direction: column;
+                min-width: 273px;
+                min-height: 141px;
+                flex-shrink: 0;
+                border-radius: 12px;
+                border: 1px solid var(--Gradient-2, #0D0A2C);
+                background: linear-gradient(94deg, rgba(47, 124, 252, 0.01) 0.26%, rgba(162, 65, 254, 0.01) 22.22%, rgba(255, 22, 245, 0.01) 53.19%, rgba(255, 72, 135, 0.01) 80.22%, rgba(255, 110, 53, 0.01) 105.55%);
+                box-shadow: 0px 0px 10.5px 0px rgba(44, 128, 255, 0.19) inset;
+                padding: 10px 42px 18px 42px;
+
+                .block-1-currency {
+                    font-size: 32px;
+                    font-weight: 900;
+                    line-height: 44.625px;
+                }
+
+                .block-1-cource {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 12px;
+
+                    .cource-number .cource-cripto {
+                        font-weight: 400;
+                    }
+
+                    .cource-number {
+                        padding-right: 2px;
+                    }
+
+                    .cource-interest {
+                        color: #FFD60A;
+                        font-weight: 800;
+                    }
+                }
+
+                .block-1-btn {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 8px;
+
+                    button {
+                        display: flex;
+                        padding: 6px 12px;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 12px;
+                        border: 0.75px solid #0D0A2C;
+                        background: linear-gradient(94deg, rgba(47, 124, 252, 0.01) 0.26%, rgba(162, 65, 254, 0.01) 22.22%, rgba(255, 22, 245, 0.01) 53.19%, rgba(255, 72, 135, 0.01) 80.22%, rgba(255, 110, 53, 0.01) 105.55%);
+                        box-shadow: 0px 0px 10.5px 0px rgba(44, 128, 255, 0.19) inset;
+                    }
+
+                    button:focus {
+                        background: linear-gradient(94deg, #2F7CFC 0.26%, #A241FE 22.22%, #FF16F5 53.19%, #FF4887 80.22%, #FF6E35 105.55%);
+                    }
+                }
+            }
+        }
+    }
+
+    .content-image-block-3 {
+        display: flex;
+        justify-content: center;  
+        img {
+            max-width: 430px;
+        }
+    }
+}
+
+// end
