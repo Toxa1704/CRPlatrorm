@@ -112,29 +112,35 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        transition: all 1S;
         &-sig {
             margin-right: 16px;
             padding: 8px 16px;
             border-radius: 16px;
+            border: 1px solid var(--Gradient-2, #0D0A2C);
+            background: linear-gradient(94deg, rgba(47, 124, 252, 0.01) 0.26%, rgba(162, 65, 254, 0.01) 22.22%, rgba(255, 22, 245, 0.01) 53.19%, rgba(255, 72, 135, 0.01) 80.22%, rgba(255, 110, 53, 0.01) 105.55%);
+            box-shadow: 0px 0px 14px 0px rgba(44, 128, 255, 0.19) inset;
 
         }
 
-        &-sig:hover {
+        &-sig:focus {
             background: var(--Gradient-3, linear-gradient(94deg, #2F7CFC 0.26%, #A241FE 22.22%, #FF16F5 53.19%, #FF4887 80.22%, #FF6E35 105.55%));
-            transition: all 0.5s;
+            // transition: all 1s;
 
         }
 
         &-log {
             padding: 8px 16px;
             border-radius: 16px;
+            border: 1px solid var(--Gradient-2, #0D0A2C);
+            background: linear-gradient(94deg, rgba(47, 124, 252, 0.01) 0.26%, rgba(162, 65, 254, 0.01) 22.22%, rgba(255, 22, 245, 0.01) 53.19%, rgba(255, 72, 135, 0.01) 80.22%, rgba(255, 110, 53, 0.01) 105.55%);
+            box-shadow: 0px 0px 14px 0px rgba(44, 128, 255, 0.19) inset;
 
         }
 
-        &-log:hover {
+        &-log:focus {
             background: var(--Gradient-3, linear-gradient(94deg, #2F7CFC 0.26%, #A241FE 22.22%, #FF16F5 53.19%, #FF4887 80.22%, #FF6E35 105.55%));
-            transition: all 0.5s;
+            // transition: all 0.5s;
         }
     }
 }
@@ -546,7 +552,7 @@ body {
         }
 
         .content__text-text {
-            margin-top: 24px;
+            // margin-top: 24px;
             font-size: 24px;
             font-weight: 400;
         }
@@ -555,10 +561,15 @@ body {
             margin-top: 48px;
             font-size: 20px;
             font-weight: 800;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
 
             .text-table-item {
+                width: 566px;
                 display: flex;
-                margin-bottom: 24px;
+                padding: 24px 0;
                 justify-content: flex-start;
                 align-items: center;
                 gap: 24px;
@@ -568,7 +579,6 @@ body {
                     display: flex;
                     padding: 10px;
                     align-items: flex-start;
-                    gap: 10px;
                     border-radius: 38px;
                     border: 1px solid $gradient2, #0D0A2C;
                     background: rgba(255, 255, 255, 0.01);
@@ -578,9 +588,8 @@ body {
                 }
 
                 .table-item-text {
-                    margin-bottom: 24px;
 
-
+                    // margin-bottom: 24px;
                     p {
                         display: none;
                     }
@@ -840,6 +849,7 @@ body {
 .footer {
     background: var(--Neutural-80, #020E21);
 }
+
 .footer__inner {
     display: flex;
     justify-content: space-between;
@@ -847,7 +857,7 @@ body {
     height: 100px;
     margin-top: 172px;
     padding: 29px auto 35px auto;
-    
+
 
     a {
         font-size: 24px;
