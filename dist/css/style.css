@@ -1468,6 +1468,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.footer {
+  background: var(--Neutural-80, #020E21);
+}
+
 .footer__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1481,7 +1485,6 @@ body {
   height: 100px;
   margin-top: 172px;
   padding: 29px auto 35px auto;
-  background: var(--Neutural-80, #020E21);
 }
 
 .footer__inner p {
