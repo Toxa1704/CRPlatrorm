@@ -790,8 +790,10 @@ body {
     gap: 16px;
 
     &-card {
-        display: grid;
-        grid-template-columns:auto auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
         padding: 16px 24px;
         border-radius: 8px;
         border: 1px solid var(--Gradient-2, #0D0A2C);
@@ -803,6 +805,7 @@ body {
             flex-direction: column;
             justify-content: space-between;
             font-weight: 400;
+
             .card-text-title {
                 font-size: 36px;
             }
@@ -826,4 +829,27 @@ body {
     }
 }
 
+.discover__section-card:hover {
+    background-image: url('../img/content/bg_cards.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 // end discover
+// start footer
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    margin-top: 172px;
+    padding: 29px auto 35px auto;
+    background: var(--Neutural-80, #020E21);
+
+    p {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+//  end footer

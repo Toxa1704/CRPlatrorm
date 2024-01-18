@@ -1408,8 +1408,16 @@ body {
 }
 
 .discover__section-card {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 16px;
   padding: 16px 24px;
   border-radius: 8px;
   border: 1px solid var(--Gradient-2, #0D0A2C);
@@ -1452,4 +1460,31 @@ body {
   gap: 16px;
   color: #2C80FF;
   font-size: 16px;
+}
+
+.discover__section-card:hover {
+  background-image: url("../img/content/bg_cards.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 172px;
+  padding: 29px auto 35px auto;
+  background: var(--Neutural-80, #020E21);
+}
+
+.footer__inner p {
+  font-size: 24px;
+  font-weight: 400;
 }
